@@ -1,0 +1,223 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  color:rgb(158, 199, 196)
+}
+
+html{
+  background-color: rgb(11, 12, 32);
+}
+
+.App {
+  text-align: center;
+
+  height:102%;
+  width:100%;
+ 
+}
+
+body {  
+  min-width:625px; 
+}
+
+.container{
+  height:100%;
+  width:95%;
+  margin:auto;
+  background-color: rgb(26, 35, 71);
+  
+}
+
+header {
+  background-color: rgb(42, 40, 92);
+  background-image: linear-gradient(rgb(53, 88, 160), rgb(39, 42, 130));
+  height:60px;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+header {
+  margin-bottom:2em;
+}
+
+.searchbox {
+  margin-bottom:1em;
+}
+.content{
+
+  /* background-color: aquamarine; */
+  
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.content{
+  margin:auto;
+  display:flex;
+  flex-direction:row;
+  height:100%;
+  width:90%;
+  
+}
+
+.movie-wrapper{
+  /* background-color: aquamarine; */
+  justify-content: space-around;
+  align-items: center;
+  margin:auto;
+  display:flex;
+  flex-direction:row;
+  height:86%;
+  width:90%;
+  /* padding:3em 2em; */
+
+}
+
+.movie{
+  /* border: 1px solid rgba(0, 0, 0, 0.8); */
+  /* grid-column: span 2; */
+
+
+}
+
+
+.movie-list{
+  width:100%;
+  height:100%;
+  /* background-color: blueviolet; */
+}
+
+
+.contain-movies{
+  display: grid;
+  flex-wrap:wrap;
+  flex-flow:wrap;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-gap: 0.5rem;
+  justify-content:space-between;
+  list-style:none;
+  width:100%;
+  margin: 0 auto;
+}
+
+nav{
+  /* background-color: blanchedalmond; */
+  /* width:18em; */
+  display: flex;
+  justify-content: space-around;
+}
+
+
+img {
+  /* display:none; */
+  width: 100%;  
+  height: 100%; 
+  object-fit: fill; 
+}
+
+a{
+  text-align:center;
+  all: unset;
+  padding:1.1em;
+  /* padding-left: 1em; */
+  /* background-color: black; */
+}
+
+a:hover{
+  background-color: rgb(56, 60, 136);
+  cursor: pointer;
+}
+
+.moviesearcharea, .citysearcharea{
+  height:inherit;
+  background-color: blanchedalmond;
+  position:relative;
+  border: 1px solid black;
+}
+
+.moviesearcharea{
+  width:60%;
+  
+}
+
+.citysearcharea{
+  width:30%;
+
+}
+
+input {
+  border:0px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  background-color: rgb(224, 228, 231);
+}
+
+input[type=text] {
+  width:100%;
+  height:2em;
+  font-size: 20px;
+  padding-left:2.2em;
+  position:relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(rgb(219, 243, 255), rgb(170, 194, 247));
+  color:rgb(32, 18, 229);
+  
+}
+
+
+input[type=text]:hover{
+  background-image: linear-gradient(rgb(155, 186, 239), rgb(115, 156, 243));
+}
+
+/* a[name]{
+
+} */
+input[type=submit] {
+  cursor:pointer;
+  font-size: 20px;
+  width:12em;
+  height:2.1em;
+  color:rgb(73, 105, 150);
+  border:1px solid black;
+  background-image: linear-gradient(rgb(146, 188, 255), rgb(101, 160, 255));
+}
+
+.movieresults li, .cityresults li {
+  list-style-type: none;
+  display: block;
+  list-style-type: none;
+  color:rgb(149, 179, 201);
+  background-color:rgb(86, 102, 138);
+  padding:1em;
+  padding-left: 2em;
+}
+
+ul{
+  padding:0px;
+}
+
+.movieresults li:hover, .cityresults li:hover {
+  border: 1px solid rgb(147, 147, 147);
+  background-color: rgb(82, 111, 205);
+  color:rgb(46, 76, 133);
+  cursor:pointer;
+}
+
+
+.movieresults, .cityresults {
+
+  position:absolute;
+  z-index: 1;
+  background-color: rgb(246, 255, 255);
+  box-sizing: border-box;
+  width:100%;
+  top:1.6em;
+  text-align:left;
+
+}
